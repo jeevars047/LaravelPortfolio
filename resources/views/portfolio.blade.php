@@ -565,14 +565,14 @@
         <h3 class="project-title">ChatApp-Ai</h3>
         <p class="project-desc">Developed an AI chat application powered by Claude AI that enables dynamic, real-time conversations.Implemented message handling, API integration, and a user-friendly interface for smooth interaction.</p>
         <div class="project-tags"><span class="tag">CLAUDE AI</span></div>
-        <a href="#" class="project-link">View Project →</a>
+        <a href="https://chatweb-tau-three.vercel.app/" class="project-link">View Project →</a>
       </div>
       <div class="project-card">
         <div class="project-num">003</div>
         <h3 class="project-title">MyPortFolio</h3>
         <p class="project-desc">A personal portfolio website showcasing my web development projects, technical skills, and practical experience. Designed with a clean, responsive layout to highlight my work and capabilities.</p>
         <div class="project-tags"><span class="tag">LARAVEL</span><span class="tag">HTML</span><span class="tag">CSS</span></div>
-        <a href="#" class="project-link">View Project →</a>
+        <a href="https://laravelportfolio-7807.onrender.com/" class="project-link">View Project →</a>
       </div>
     </div>
   </section>
@@ -610,7 +610,7 @@
 
   <!-- FOOTER -->
   <footer>
-    <span>© 2025 — Jeeva R</span>
+    <span>© 2026 — Jeeva R</span>
     <span>Designed & Developed with intention.</span>
   </footer>
 
