@@ -1,5 +1,0 @@
-{
-  "outputDirectory": "public",
-  "framework": null,
-  "buildCommand": "npm run build"
-}
