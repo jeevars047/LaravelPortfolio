@@ -1,0 +1,5 @@
+services:
+  - type: web
+    name: laravel-portfolio
+    runtime: docker
+    dockerfilePath: ./Dockerfile
