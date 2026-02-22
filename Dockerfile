@@ -27,3 +27,7 @@ RUN echo '<VirtualHost *:80>\n\
 </VirtualHost>' > /etc/apache2/sites-available/000-default.conf
 
 RUN a2enmod rewrite
+COPY .env.example .env
+RUN sed -i 's/SESSION_DRIVER=database/SESSION_DRIVER=cookie/' .env
+RUN sed -i 's/DB_CONNECTION=mysql/DB_CONNECTION=sqlite/' .env
+RUN php artisan key:generate
