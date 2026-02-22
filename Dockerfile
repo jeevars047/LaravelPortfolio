@@ -5,7 +5,7 @@ WORKDIR /var/www/html
 RUN apt-get update && apt-get install -y \
     git curl zip unzip \
     libpng-dev libonig-dev libxml2-dev \
-    && docker-php-ext-install pdo pdo_mysql mbstring
+    && docker-php-ext-install pdo pdo_mysql mbstring pdo_sqlite
 
 RUN a2enmod rewrite
 
@@ -22,7 +22,12 @@ RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - \
 COPY .env.example .env
 RUN php artisan key:generate
 
+RUN mkdir -p /var/www/html/database
+RUN touch /var/www/html/database/database.sqlite
+RUN php artisan migrate --force
+
 RUN chown -R www-data:www-data /var/www/html/storage
+RUN chown -R www-data:www-data /var/www/html/database
 
 ENV APACHE_DOCUMENT_ROOT /var/www/html/public
 
